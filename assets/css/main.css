@@ -3092,7 +3092,9 @@ input, select, textarea {
 		}
 
 /* Header */
-
+		#logo {
+			border-bottom: none;
+		}
 	#header {
 		-moz-transition: background-color 0.2s ease-in-out;
 		-webkit-transition: background-color 0.2s ease-in-out;
@@ -4073,13 +4075,11 @@ input, select, textarea {
 			width: 100%;
 		}
 
-		#footer .inner form {
-			margin: 0 3em 0 0;
-			width: calc(50% - 1.5em);
-		}
 
 		#footer .inner .contact {
-			width: calc(50% - 1.5em);
+			display: flex;
+			justify-content: space-between;
+			
 		}
 
 		#footer .inner .copyright {
@@ -4166,8 +4166,11 @@ input, select, textarea {
 
 				#footer .inner .contact {
 					margin: 0 0 3em 0;
+					display: block;
 				}
-
+				#footer .flex {
+					margin-top: 1.5em;
+				}
 	}
 
 	@media screen and (max-width: 480px) {
